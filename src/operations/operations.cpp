@@ -15,7 +15,8 @@ namespace operations {
     }
 
     types::Vector2D vector_scale(types::Vector2D v, int s) {
-        return types::Vector2D(s * v.x, s * v.y);
+        types::Vector2D vr(s * v.x, s * v.y);
+        return vr;
     }
 }
 }
