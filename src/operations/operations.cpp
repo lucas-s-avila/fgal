@@ -1,4 +1,5 @@
 #include <cmath>
+
 #include "operations/operations.h"
 
 namespace fgal {
@@ -18,5 +19,9 @@ namespace operations {
             (v1.x * v2.x) + (v1.y * v2.y)
         );
     }
+    types::Vector2D vector_scale(types::Vector2D v, int s) {
+        return types::Vector2D(s * v.x, s * v.y);
+    }
+  
 }
 }
