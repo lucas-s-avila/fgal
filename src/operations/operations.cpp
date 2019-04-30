@@ -1,4 +1,5 @@
 #include <cmath>
+
 #include "operations/operations.h"
 
 namespace fgal {
@@ -15,6 +16,10 @@ namespace operations {
 
     types::Vector2D projection_X(types::Vector2D v) {
         return types::Vector2D(v.x,0);
+    }
+
+    types::Vector2D vector_scale(types::Vector2D v, int s) {
+        return types::Vector2D(s * v.x, s * v.y);
     }
 }
 }

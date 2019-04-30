@@ -9,6 +9,7 @@ namespace operations {
     float points_distance(types::Point2D, types::Point2D);
     types::Vector2D vectors_sum(types::Vector2D, types::Vector2D);
     types::Vector2D projection_X(types::Vector2D v);
+    types::Vector2D vector_scale(types::Vector2D, int);
 }
 }
 
